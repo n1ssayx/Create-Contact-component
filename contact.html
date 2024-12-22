@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"> <!-- Specifies the character encoding for the document -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Ensures proper scaling on mobile devices -->
+    <title>Contact Us</title> <!-- Title displayed on the browser tab -->
+    <link rel="stylesheet" href="contact.css"> <!-- Link to the external stylesheet -->
+</head>
+<body>
+    <div class="container"> <!-- Main container for the page content -->
+        <header class="ncont"> <!-- Header section for the logo and navigation -->
+            <img src="https://i.postimg.cc/RZbYyfSn/logo-no-background.png" alt="Logo"> <!-- Company logo -->
+            <div class="icon-signin"> <!-- Icon for the sign-in link -->
+                <a href="signin.html"> <!-- Link to the sign-in page -->
+                    <svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="40" height="70" fill="none" viewBox="0 0 24 24">
+                        <!-- SVG for the user icon -->
+                        <path stroke="currentColor" stroke-width="2" d="M7 17v1a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1v-1a3 3 0 0 0-3-3h-4a3 3 0 0 0-3 3Zm8-9a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z"/>
+                    </svg>
+                </a>
+            </div>
+        </header>
+        <div>
+            <nav class="nav-cont"> <!-- Navigation bar -->
+                <a href="main.html" id="mainnav">Main Page</a> <!-- Link to the main page -->
+                <a href="products.html" id="contnav">Products</a> <!-- Link to the products page -->
+            </nav>
+        </div>    
+        <section class="contact-section"> <!-- Section for the contact form -->
+            <h1>Contact Us</h1> <!-- Heading for the section -->
+            <p>We’d love to hear from you! Feel free to reach out to us with any questions or feedback.</p> <!-- Introductory text -->
+            <form class="contact-form"> <!-- Contact form -->
+                <div class="form-group"> <!-- Group for the name input field -->
+                    <label for="name">Full Name</label> <!-- Label for the name field -->
+                    <input type="text" id="name" placeholder="Enter your name" required> <!-- Input for the user's name -->
+                </div>
+                <div class="form-group"> <!-- Group for the email input field -->
+                    <label for="email">Email</label> <!-- Label for the email field -->
+                    <input type="email" id="email" placeholder="Enter your email" required> <!-- Input for the user's email -->
+                </div>
+                <div class="form-group"> <!-- Group for the message textarea -->
+                    <label for="message">Message</label> <!-- Label for the message field -->
+                    <textarea id="message" rows="5" placeholder="Write your message here..." required></textarea> <!-- Text area for the user's message -->
+                </div>
+                <button type="submit" class="btn-submit">Send Message</button> <!-- Submit button for the form -->
+            </form>
+        </section>
+        <footer> <!-- Footer section -->
+            <p>&copy; 2024 VitaVerde. All Rights Reserved.</p> <!-- Footer text -->
+        </footer>
+    </div>
+</body>
+</html>

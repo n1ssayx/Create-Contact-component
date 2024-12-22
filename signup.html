@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Set character encoding and viewport for responsive design -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Page title -->
+    <title>Sign Up</title>
+    <!-- Link to external CSS for styling -->
+    <link rel="stylesheet" href="signup.css">
+</head>
+<body>
+    <!-- Container to wrap the entire content -->
+    <div class="container">
+        <!-- Header section containing the logo -->
+        <header class="ncont">
+            <img src="https://i.postimg.cc/RZbYyfSn/logo-no-background.png" alt="Logo">
+        </header>
+
+        <!-- Navigation bar for site links -->
+        <div>
+            <nav class="nav-cont">
+                <a href="main.html" id="mainnav">Main Page</a>
+                <a href="products.html" id="pronav">Products</a>
+                <a href="contact.html" id="contnav">Contact Us</a>
+            </nav>
+        </div>
+
+        <!-- Sign-up section -->
+        <section class="signup-section">
+            <h1>Sign Up</h1>
+            <p>Create an account to start shopping with us!</p>
+
+            <!-- Form for sign-up -->
+            <form class="signup-form">
+                <!-- Input for full name -->
+                <div class="form-group">
+                    <label for="name">Full Name</label>
+                    <input type="text" id="name" placeholder="Enter your full name" required>
+                </div>
+
+                <!-- Input for email address -->
+                <div class="form-group">
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" placeholder="Enter your email" required>
+                </div>
+
+                <!-- Input for password with validation pattern and tool-tip -->
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" placeholder="Enter your password" 
+                        title="Min 3 letters and max 16 letters, use at least one uppercase letter, one number, and one symbol" 
+                        pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#$%^&*_=+-]).{8,16}$" required/>
+                </div>
+
+                <!-- Input for confirming password -->
+                <div class="form-group">
+                    <label for="confirm-password">Confirm Password</label>
+                    <input type="password" name="confirm" id="confirm-password" placeholder="Confirm your password" required>
+                </div>
+
+                <!-- Submit button -->
+                <button type="submit" class="btn-submit">Sign Up</button>
+            </form>
+
+            <!-- Link to sign-in page for existing users -->
+            <p class="signin-link">Already have an account? <a href="signin.html">Sign In</a></p>
+        </section>
+
+        <!-- Footer with copyright information -->
+        <footer>
+            <p>&copy; 2024 Your Store. All Rights Reserved.</p>
+        </footer>
+    </div>
+
+    <!-- Link to external JavaScript file for form functionality -->
+    <script src="signup.js"></script>
+</body>
+</html>

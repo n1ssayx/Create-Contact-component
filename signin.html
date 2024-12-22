@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Define the character encoding and make the page responsive -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Title of the page -->
+    <title>Sign In</title>
+    <!-- Link to the external CSS file for styling -->
+    <link rel="stylesheet" href="signin.css">
+</head>
+<body>
+    <!-- Main container for all the content -->
+    <div class="container">
+        <!-- Header section with logo -->
+        <header class="ncont">
+            <img src="https://i.postimg.cc/RZbYyfSn/logo-no-background.png" alt="Logo">
+        </header>
+
+        <!-- Navigation bar for site-wide links -->
+        <div>
+            <nav class="nav-cont">
+                <a href="main.html" id="mainnav">Main Page</a>
+                <a href="products.html" id="pronav">Products</a>
+                <a href="contact.html" id="contnav">Contact Us</a>
+            </nav>
+        </div>
+
+        <!-- Sign-in section -->
+        <section class="signin-section">
+            <h1>Sign In</h1>
+            <p>Access your account by signing in below.</p>
+
+            <!-- Sign-in form -->
+            <form class="signin-form">
+                <!-- Input field for email address -->
+                <div class="form-group">
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" placeholder="Enter your email" required>
+                </div>
+
+                <!-- Input field for password -->
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" placeholder="Enter your password" required>
+                </div>
+
+                <!-- Submit button for signing in -->
+                <button type="submit" class="btn-submit">Sign In</button>
+            </form>
+
+            <!-- Link to the sign-up page for users without an account -->
+            <p class="signup-link">Don’t have an account? <a href="signup.html">Sign Up</a></p>
+        </section>
+
+        <!-- Footer section -->
+        <footer>
+            <p>&copy; 2024 Your Store. All Rights Reserved.</p>
+        </footer>
+    </div>
+</body>
+</html>

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Specifies the character encoding and viewport settings -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Title of the document -->
+    <title>Document</title>
+    <!-- Link to external CSS file for styling -->
+    <link rel="stylesheet" href="products.css">
+</head>
+<body class="">
+    <div class="container">
+        <!-- Header section -->
+        <header class="ncont">
+            <!-- Logo for branding -->
+            <img src="https://i.postimg.cc/RZbYyfSn/logo-no-background.png" alt="">
+            <!-- Sign-in icon linking to the sign-in page -->
+            <div class="icon-signin">
+                <a href="signin.html">
+                    <svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="40" fill="none" viewBox="0 0 24 24">
+                        <path stroke="currentColor" stroke-width="2" d="M7 17v1a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1v-1a3 3 0 0 0-3-3h-4a3 3 0 0 0-3 3Zm8-9a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z"/>
+                    </svg>
+                </a>
+            </div>
+            <!-- Shopping cart icon -->
+            <div class="icon-cart">
+                <svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="80" fill="none" viewBox="0 0 24 24">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 4h1.5L9 16m0 0h8m-8 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4Zm8 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4Zm-8.5-3h9.25L19 7H7.312"/>
+                </svg>
+                <span>0</span> <!-- Dynamic count for the number of items in the cart -->
+            </div>
+        </header>
+
+        <!-- Navigation bar -->
+        <div>
+            <nav class="nav-cont">
+                <a id="mainnav" href="main.html">Main Page</a>
+                <a href="products.html">Products</a>
+                <a id="contnav" href="contact.html">Contact Us</a>
+            </nav>
+        </div>
+
+        <!-- Product listing section -->
+        <div class="products">
+            <!-- Example product with image, price, sizes, and "Add to Cart" functionality -->
+            <figure class="fig">
+                <img src="https://i.postimg.cc/tRtMy8Rb/vecteezy-ai-generated-green-hoodie-isolated-on-transparent-background-35440103.png" alt="">
+                <div class="prd-dtl">
+                    <p>80$</p>
+                    <div class="sizeh">
+                        <button>S</button><button class="m">M</button><button>L</button>
+                    </div>
+                    <span class="addCart">Add to cart</span>
+                </div>
+            </figure>
+            <!-- Similar structure repeated for other products -->
+            <figure class="fig">
+                <img src="https://i.postimg.cc/Mp4sdS57/vecteezy-ai-generated-green-casual-backpack-png-41166186.png" alt="">
+                <div class="prd-dtl">
+                    <p>120$</p>
+                    <span class="addCart">Add to cart</span>
+                </div>
+            </figure>
+            <figure class="fig">
+                <img src="https://i.postimg.cc/K8KfKWbR/vecteezy-trends-in-trousers-48073838.png" alt="">
+                <div class="prd-dtl">
+                    <p>60$</p>
+                    <div class="sizep">
+                        <button>S</button><button class="m">M</button><button>L</button>
+                    </div>
+                    <span class="addCart">Add to cart</span>
+                </div>
+            </figure>
+            <figure class="fig">
+                <img src="https://i.postimg.cc/VNnFgbdw/vecteezy-green-sports-baseball-cap-27941763.png" alt="">
+                <div class="prd-dtl">
+                    <p>20$</p>
+                    <span class="addCart">Add to cart</span>
+                </div>
+            </figure>
+        </div>
+
+        <!-- Shopping cart section -->
+        <div class="cartTab">
+            <h1>Shopping cart</h1>
+            <div class="listCart">
+                <!-- Dynamic content for the list of items in the cart -->
+            </div>
+            <div class="cart-total">
+                <!-- Dynamic total price of the cart -->
+            </div>
+            <div class="btn">
+                <button class="close">CLOSE</button>
+                <button class="checkOut">CHECK OUT</button>
+            </div>
+        </div>
+
+        <!-- Footer section -->
+        <footer>
+            <p>&copy; 2024 VitaVerde. All Rights Reserved.</p>
+        </footer>
+    </div>
+
+    <!-- Link to external JavaScript file -->
+    <script src="store.js" async></script>
+</body>
+</html>
