@@ -31,7 +31,7 @@
             <form class="contact-form"> <!-- Contact form -->
                 <div class="form-group"> <!-- Group for the name input field -->
                     <label for="name">Full Name</label> <!-- Label for the name field -->
-                    <input type="text" id="name" placeholder="Enter your name" required> <!-- Input for the user's name -->
+                    <input type="text" id="name" placeholder="Enter your name" minlength="6" max="16" required> <!-- Input for the user's name -->
                 </div>
                 <div class="form-group"> <!-- Group for the email input field -->
                     <label for="email">Email</label> <!-- Label for the email field -->
@@ -39,7 +39,7 @@
                 </div>
                 <div class="form-group"> <!-- Group for the message textarea -->
                     <label for="message">Message</label> <!-- Label for the message field -->
-                    <textarea id="message" rows="5" placeholder="Write your message here..." required></textarea> <!-- Text area for the user's message -->
+                    <textarea id="message" rows="5" placeholder="Write your message here..." minlength="6" required></textarea> <!-- Text area for the user's message -->
                 </div>
                 <button type="submit" class="btn-submit">Send Message</button> <!-- Submit button for the form -->
             </form>
